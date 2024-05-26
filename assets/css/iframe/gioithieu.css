@@ -1,0 +1,51 @@
+.introduce {
+  display: flex;
+}
+
+.album {
+  flex: 1;
+  padding: 30px;
+}
+
+.album-top__img {
+  width: 80%;
+}
+
+.album-top__img--inner {
+  width: 100%;
+}
+
+.album__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.album-item__img {
+  width: 100%;
+}
+
+.moreinfo {
+  width: 20%;
+}
+
+.moreinfo__img {
+  width: 100%;
+}
+
+.moreinfo__list {
+  background-color: rgb(177, 177, 177);
+}
+
+.moreinfo__focus--heading {
+  background-color: cyan;
+}
+
+.moreinfo__popular--heading {
+  background-color: orange;
+}
+
+.moreinfo__popular {
+  margin-top: 30px;
+}

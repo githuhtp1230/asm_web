@@ -1,0 +1,34 @@
+/* news */
+.news {
+  display: flex;
+}
+
+.news__aside {
+  display: flex;
+}
+
+.news__list {
+  flex-grow: 2;
+}
+
+.news__container--img {
+  flex-grow: 1;
+}
+
+.news__img--admissions {
+  width: 100%;
+}
+
+/* event */
+.event__heading {
+  text-align: center;
+}
+
+.event__list {
+  display: flex;
+  column-gap: 10px;
+}
+
+.event-item__img {
+  width: 100%;
+}

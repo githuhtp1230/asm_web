@@ -1,0 +1,16 @@
+* {
+  text-align: center;
+}
+
+.info {
+  background-color: rgb(208, 208, 208);
+  padding: 50px;
+}
+
+.heading {
+  font-size: 30px;
+}
+
+.address {
+  margin-top: 80px;
+}

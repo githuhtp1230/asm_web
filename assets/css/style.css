@@ -1,0 +1,40 @@
+/* common */
+.iframe__main {
+  height: 1000px;
+  width: 100%;
+}
+
+/* ============================================ header ============================================*/
+.nav__container {
+  background-color: rgb(94, 213, 213);
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+.nav-item {
+  padding: 5px 10px;
+}
+
+.header__img {
+  width: 100%;
+}
+
+/* ============================================ main ============================================*/
+
+/* ============================================ footer ============================================*/
+footer {
+  background-color: green;
+}
+
+.footer__inner {
+  padding: 100px 100px;
+}
+
+.footer__heading {
+  color: white;
+  text-align: center;
+}
