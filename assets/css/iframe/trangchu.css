@@ -3,6 +3,14 @@
   display: flex;
 }
 
+.news__row {
+  display: flex;
+}
+
+.news__heading {
+  text-align: center;
+}
+
 .news__aside {
   display: flex;
 }
