@@ -25,15 +25,15 @@ ol {
 
 /* ============================================ header ============================================*/
 .nav__container {
-  background-color: rgb(94, 213, 213);
+  background-color: #11ACC5;
 }
 
 .nav__list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: -2px;
   position: relative;
+  margin: -2px auto 0 auto;
 }
 
 .nav__list::after {
@@ -43,7 +43,8 @@ ol {
   top: 2px;
   left: 0;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 1);
+  filter: blur(2px);
   z-index: 1;
 }
 
@@ -54,7 +55,8 @@ ol {
   bottom: 2px;
   left: 0;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(255, 255, 255, 1);
+  filter: blur(2px);
   z-index: 1;
 }
 
