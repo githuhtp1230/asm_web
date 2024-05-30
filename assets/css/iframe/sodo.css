@@ -1,3 +1,77 @@
+* {
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+}
+
+.header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 120px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: uppercase;
+  background-image: linear-gradient(45deg, #231557 0%,
+      #FF5733 20%,
+      #FFC300 40%,
+      #FF5733 60%,
+      #900C3F 80%,
+      #231557 100%);
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* sử dụng để đặt màu của văn bản trong một phần tử text-fill-clip  */
+  text-fill-clip: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: animation-text 5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes animation-text {
+  0% {
+    background-position: 0% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.wrapper__tree {
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+  background-size: 400% 400%;
+  animation: gradient-infinite 15s ease infinite;
+}
+
+.tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradient-infinite {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 ul {
   padding-left: 0;
 }
@@ -87,25 +161,37 @@ ul {
 }
 
 .tree li span:hover::before,
-.tree li span:hover::before + ul li span {
+.tree li span:hover::before+ul li span {
   height: 380%;
   width: 200%;
 }
 
-.tree li span:hover + ul li::after,
-.tree li span:hover + ul li::before,
-.tree li span:hover + ul::before,
-.tree li span:hover + ul ul::before {
-  border-color: #ff7675;
+.tree li span:hover+ul li::after,
+.tree li span:hover+ul li::before,
+.tree li span:hover+ul::before,
+.tree li span:hover+ul ul::before {
+  border-color: #fff;
 }
 
-/* animation */
+.tree li span:hover,
+.tree li span:hover~ul li span,
+.tree li span:hover~ul li ul li span,
+.tree li span:hover~ul li ul li ul li span,
+.tree li span:hover~ul li ul li ul li ul li span {
+  border: 3px solid #fff;
+}
+
+.tree>ul>li>span:hover,
+.tree li span:hover~ul li span {
+  border: 3px solid #fff;
+}
+
+/* Animation for span to expand from center */
 span {
   position: relative;
   display: block;
   color: white;
   font-size: 14px;
-  font-family: "montserrat";
   text-decoration: none;
   border: 2px solid #ff7675;
   padding: 14px 60px;
@@ -113,8 +199,10 @@ span {
   overflow: hidden;
   transition: 1s all ease;
 }
+
 span::before {
-  background: #ff7675;
+  background-color: #FF9A8B;
+  background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
   content: "";
   position: absolute;
   top: 50%;
@@ -125,16 +213,19 @@ span::before {
 }
 
 span::before {
-  width: 200%;
-  height: 0%;
-  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  /* Optional: for circular effect */
 }
+
 span:hover::before,
-span:hover + ul li span::before,
+span:hover+ul li span::before,
 span:hover p,
-span:hover + ul li span p {
-  height: 380%;
+span:hover+ul li span p {
   width: 200%;
+  height: 200%;
   color: white;
 }
 
