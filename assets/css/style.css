@@ -25,7 +25,7 @@ ol {
 
 /* ============================================ header ============================================*/
 .nav__container {
-  background-color: #11ACC5;
+  background-color: #11acc5;
 }
 
 .nav__list {
@@ -61,11 +61,11 @@ ol {
 }
 
 .nav-item {
-  padding: 10px;
   z-index: 99;
 }
 
 .nav-item a {
+  padding: 10px;
   font-size: 1.4rem;
   color: #fff;
   line-height: 1.4rem;
@@ -76,10 +76,12 @@ ol {
 .nav-item a::after {
   content: "";
   position: absolute;
-  width: 100%;
+  width: 80%;
   height: 2px;
   left: 0;
-  bottom: -6px;
+  right: 0;
+  margin: 0 auto;
+  bottom: 4px;
   background-color: #fff;
   border-radius: 4px;
   transform: scale(0);
@@ -87,12 +89,12 @@ ol {
   transition: transform 0.5s;
 }
 
-.nav-item:hover a::after {
+.nav-item:hover > a::after {
   transform-origin: left;
   transform: scale(1);
 }
 
-.nav-item:hover {
+.nav-item:hover:not(.menu__sub--item) {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -101,7 +103,35 @@ ol {
 }
 
 /* ============================================ main ============================================*/
+.menu__main {
+  position: relative;
+}
+.menu__main:hover .menu__sub {
+  display: block;
+}
 
+.menu__sub {
+  position: absolute;
+  display: none;
+  width: 120px;
+  box-shadow: -1px 1px 2px 2px rgba(255, 255, 255, 0.75);
+}
+
+.menu__sub--item {
+  background-color: #11acc5;
+}
+
+.fa-caret-down {
+  padding-left: 5px;
+}
+
+.menu__sub--item:not(:last-child) {
+  border-bottom: 1px solid #ffffff;
+}
+
+.menu__sub--item:hover {
+  background-color: rgb(17 187 216);
+}
 /* ============================================ footer ============================================*/
 footer {
   background-color: green;
