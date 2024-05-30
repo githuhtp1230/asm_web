@@ -89,7 +89,7 @@ ol {
   transition: transform 0.5s;
 }
 
-.nav-item:hover > a::after {
+.nav-item:hover>a::after {
   transform-origin: left;
   transform: scale(1);
 }
@@ -106,23 +106,50 @@ ol {
 .menu__main {
   position: relative;
 }
+
 .menu__main:hover .menu__sub {
   display: block;
+}
+
+.icon-down {
+  margin-left: 5px;
+}
+
+.nav-item:hover .icon-down {
+  rotate: -90deg;
+  padding-bottom: 0;
+  transition: rotate 0.5s ease;
 }
 
 .menu__sub {
   position: absolute;
   display: none;
   width: 120px;
-  box-shadow: -1px 1px 2px 2px rgba(255, 255, 255, 0.75);
+}
+
+.menu__sub--item::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  right: 0;
+  left: 0;
+  width: 120px;
+  height: 10px;
+  background: transparent;
 }
 
 .menu__sub--item {
   background-color: #11acc5;
+  border-radius: 2px;
+  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 0.75);
 }
 
-.fa-caret-down {
-  padding-left: 5px;
+.menu__sub--item:first-child {
+  margin-top: 5px;
+}
+
+.menu__sub--item a {
+  text-align: center;
 }
 
 .menu__sub--item:not(:last-child) {
@@ -132,6 +159,7 @@ ol {
 .menu__sub--item:hover {
   background-color: rgb(17 187 216);
 }
+
 /* ============================================ footer ============================================*/
 footer {
   background-color: green;
