@@ -63,17 +63,6 @@ ol {
   position: relative;
 }
 
-.nav-item::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -62px;
-  width: 1px;
-  height: 18px;
-  background-color: #fff;
-}
-
 .nav-item a {
   padding: 10px;
   font-size: 1.4rem;
@@ -81,6 +70,11 @@ ol {
   line-height: 1.4rem;
   display: block;
   position: relative;
+}
+
+.separator {
+  font-size: 17px;
+  color: white;
 }
 
 .nav-item a::after {
