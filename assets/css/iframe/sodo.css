@@ -99,7 +99,7 @@ ul {
   position: absolute;
   top: 0;
   right: 50%;
-  border-top: 2px solid #ccc;
+  border-top: 2px solid #ff7675;
   width: 50%;
   height: 20px;
 }
@@ -107,7 +107,7 @@ ul {
 .tree li::after {
   right: auto;
   left: 50%;
-  border-left: 2px solid #ccc;
+  border-left: 2px solid #ff7675;
 }
 
 .tree li:only-child::after,
@@ -125,7 +125,7 @@ ul {
 }
 
 .tree li:last-child::before {
-  border-right: 2px solid #ccc;
+  border-right: 2px solid #ff7675;
   border-radius: 0 5px 0 0;
 }
 
@@ -138,7 +138,7 @@ ul {
   position: absolute;
   top: 0;
   left: 50%;
-  border-left: 2px solid #ccc;
+  border-left: 2px solid #ff7675;
   width: 0;
   height: 20px;
 }
