@@ -63,7 +63,7 @@ ol {
   position: relative;
 }
 
-.seperator {
+.separator {
   font-size: 17px;
   color: white;
 }
@@ -93,7 +93,7 @@ ol {
   transition: transform 0.5s;
 }
 
-.nav-item:hover > a::after {
+.nav-item:hover>a::after {
   transform-origin: left;
   transform: scale(1);
 }
@@ -156,6 +156,7 @@ ol {
 .menu__sub--item:hover {
   background-color: rgb(17 187 216);
 }
+
 /* ============================================ footer ============================================*/
 footer {
   background-color: green;
