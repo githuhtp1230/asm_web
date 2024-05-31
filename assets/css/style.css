@@ -26,26 +26,24 @@ ol {
 /* ============================================ header ============================================*/
 .header__img {
   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   position: relative;
 }
 
-.wrapper__logo {
-  display: flex;
-}
-
 .header__logo {
-  position: absolute;
-  top: calc((100% - 100px) / 2);
   z-index: 1;
   min-width: 90px;
+  position: absolute;
 }
 
 .header__slogan {
-  top: calc((100% - 70px) / 2);
   position: absolute;
   z-index: 1;
-  left: 110px;
   max-width: 477px;
+  margin-left: 110px;
 }
 
 .nav__container {
