@@ -107,14 +107,20 @@ ol {
   position: relative;
 }
 .menu__main:hover .menu__sub {
-  display: block;
+  visibility: visible;
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .menu__sub {
   position: absolute;
-  display: none;
+  visibility: hidden;
   width: 120px;
   box-shadow: -1px 1px 2px 2px rgba(255, 255, 255, 0.75);
+  transform: translateY(40px);
+  opacity: 0;
+  top: calc(100% + 4px);
 }
 
 .menu__sub--item {
@@ -131,6 +137,17 @@ ol {
 
 .menu__sub--item:hover {
   background-color: rgb(17 187 216);
+}
+
+.menu__sub::after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  right: 0;
+  left: 0;
+  width: 120px;
+  height: 4px;
+  background: transparent;
 }
 /* ============================================ footer ============================================*/
 footer {
