@@ -48,6 +48,7 @@ ol {
 
 .nav__container {
   background-color: #11acc5;
+  margin-top: 2px;
 }
 
 .nav__list {
