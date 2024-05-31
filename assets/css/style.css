@@ -59,7 +59,19 @@ ol {
 }
 
 .nav-item {
-  z-index: 99;
+  z-index: 1;
+  position: relative;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -62px;
+  width: 1px;
+  height: 18px;
+  background-color: #fff;
 }
 
 .nav-item a {

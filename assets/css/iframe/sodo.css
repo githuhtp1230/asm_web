@@ -213,11 +213,9 @@ span::before {
 }
 
 span::before {
-  width: 0;
-  height: 0;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  /* Optional: for circular effect */
+  width: 200%;
+  height: 0%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 span:hover::before,
