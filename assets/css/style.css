@@ -24,6 +24,30 @@ ol {
 }
 
 /* ============================================ header ============================================*/
+.header__img {
+  width: 100%;
+  position: relative;
+}
+
+.wrapper__logo {
+  display: flex;
+}
+
+.header__logo {
+  position: absolute;
+  top: calc((100% - 100px) / 2);
+  z-index: 1;
+  min-width: 90px;
+}
+
+.header__slogan {
+  top: calc((100% - 70px) / 2);
+  position: absolute;
+  z-index: 1;
+  left: 110px;
+  max-width: 477px;
+}
+
 .nav__container {
   background-color: #11acc5;
 }
@@ -100,10 +124,6 @@ ol {
 
 .nav-item:hover:not(.menu__sub--item) {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.header__img {
-  width: 100%;
 }
 
 /* ========================================= search =================================================== */
