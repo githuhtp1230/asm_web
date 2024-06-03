@@ -225,6 +225,8 @@ ol {
 
 .looking-for {
   color: #000;
+  border: none;
+  background: none;
 }
 
 .icon-search {
