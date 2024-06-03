@@ -24,8 +24,31 @@ ol {
 }
 
 /* ============================================ header ============================================*/
+.header__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.header__logo {
+  z-index: 1;
+  min-width: 90px;
+  position: absolute;
+}
+
+.header__slogan {
+  position: absolute;
+  z-index: 1;
+  max-width: 477px;
+  margin-left: 110px;
+}
+
 .nav__container {
   background-color: #11acc5;
+  margin-top: 2px;
 }
 
 .nav__list {
@@ -63,17 +86,6 @@ ol {
   position: relative;
 }
 
-.nav-item::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: -62px;
-  width: 1px;
-  height: 18px;
-  background-color: #fff;
-}
-
 .nav-item a {
   padding: 10px;
   font-size: 1.4rem;
@@ -81,6 +93,11 @@ ol {
   line-height: 1.4rem;
   display: block;
   position: relative;
+}
+
+.separator {
+  font-size: 17px;
+  color: white;
 }
 
 .nav-item a::after {
@@ -106,10 +123,6 @@ ol {
 
 .nav-item:hover:not(.menu__sub--item) {
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.header__img {
-  width: 100%;
 }
 
 /* ========================================= search =================================================== */
