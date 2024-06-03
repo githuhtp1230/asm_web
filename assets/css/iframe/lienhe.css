@@ -9,18 +9,19 @@ textarea {
 
 .lienhe__row {
   display: flex;
+  border: 1px solid #c4c4c4;
+  margin: 30px;
 }
 
 .lienhe-info {
-  background: rgb(7, 128, 224);
   background: linear-gradient(
     207deg,
     rgba(7, 128, 224, 1) 51%,
     rgba(2, 200, 219, 1) 96%
   );
   color: white;
-  width: 40%;
-  padding: 30px 8px 60px;
+  width: 30%;
+  padding: 10px 8px 60px;
 }
 
 .lienhe-info p {
@@ -45,7 +46,11 @@ textarea {
   margin-top: 20px;
 }
 
-.form-item:not(:last-child) .lienhe__input {
+.form-item:first-child {
+  margin-top: unset;
+}
+
+.form-item input.lienhe__input {
   padding: 10px 0px 10px 30px;
 }
 
@@ -59,4 +64,21 @@ textarea {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
+}
+
+.lienhe__submit {
+  margin-top: 10px;
+}
+
+.lienhe__submit--btn {
+  padding: 8px 34px;
+  background-color: #0ba8fd;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.lienhe__submit--btn:hover {
+  opacity: 0.9;
 }
