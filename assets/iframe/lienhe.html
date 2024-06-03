@@ -5,37 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/iframe/lienhe.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
     <div class="lienhe__row">
       <div class="lienhe-info">
         <h1 class="lienhe-info__heading">THPT CHUYÊN HÀ NỘI - AMSTERDAM</h1>
+
         <p class="lienhe-info__address">
-          Địa Chỉ: phố Hoàng Minh Giám, quận Cầu Giấy, Hà Nội
+          <i class="fa-solid fa-map-location-dot"></i> Phố Hoàng Minh Giám, quận
+          Cầu Giấy, Hà Nội
         </p>
-        <p class="lienhe-info__phone">Số Điện Thoại: 0123.456.789</p>
-        <p class="lienhe-info__social">Facebook: http//amsterdam//abc</p>
+
+        <p class="lienhe-info__phone">
+          <i class="fa-solid fa-phone-volume"></i> +84123.456.789
+        </p>
+
+        <p class="lienhe-info__social">
+          <i class="fa-brands fa-facebook"></i> http//amsterdam//abc
+        </p>
+
         <p class="lienhe-info__address--web">
-          Địa Chỉ Web: https://hn-ams.edu.vn
+          <i class="fa-brands fa-chrome"></i> https://hn-ams.edu.vn
         </p>
       </div>
       <div class="lienhe__postmessage">
         <form action="" class="lienhe-form">
-          <div class="lienhe-form__name">
-            <label for="name">Name: </label>
-            <input type="text" name="name" id="" />
+          <div class="lienhe-form__name form-item">
+            <i class="icon fa-solid fa-user">:</i>
+            <input
+              placeholder="Điền tên của bạn"
+              type="text"
+              name="name"
+              id=""
+              class="lienhe__input"
+            />
           </div>
-          <div class="lienhe-form__email">
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="" />
+          <div class="lienhe-form__email form-item">
+            <i class="icon fa-regular fa-envelope">:</i>
+            <input
+              placeholder="Email"
+              type="email"
+              name="email"
+              id=""
+              class="lienhe__input"
+            />
           </div>
-          <div class="lienhe-form__message">
-            <label for="message">Message: </label>
-            <textarea name="message" id=""></textarea>
+          <div class="lienhe-form__message form-item">
+            <textarea
+              placeholder="Viết nội dung liên hệ"
+              name="message"
+              id=""
+              class="lienhe__input lienhe__message"
+              rows="6"
+            ></textarea>
           </div>
         </form>
       </div>
     </div>
+    <div
+      class="fb-like"
+      data-href="https://developers.facebook.com/docs/plugins/"
+      data-width=""
+      data-layout=""
+      data-action=""
+      data-size=""
+      data-share="true"
+    ></div>
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0"
+      nonce="qSSAl5jY"
+    ></script>
+
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0"
+      nonce="oTYGXAiI"
+    ></script>
+    <div
+      class="fb-comments"
+      data-href="https://developers.facebook.com/docs/plugins/comments#configurator"
+      data-width="300"
+      data-numposts="5"
+    ></div>
   </body>
 </html>
