@@ -150,18 +150,18 @@
       </div>
     </footer>
     <script>
-      $.fn.resizeiframe = function () {
-        $(this).load(function () {
-          $(this).height($(this).contents().find("body").height());
-        });
-        $(this).click(function () {
-          $(this).height($(this).contents().find("body").height());
-        });
-      };
-      let iframe = document.getElementById("Iframe");
-      iframe.onload = function () {
-        $("Iframe").resizeiframe();
-      };
+      // $.fn.resizeiframe = function () {
+      //   $(this).load(function () {
+      //     $(this).height($(this).contents().find("body").height());
+      //   });
+      //   $(this).click(function () {
+      //     $(this).height($(this).contents().find("body").height());
+      //   });
+      // };
+      // let iframe = document.getElementById("Iframe");
+      // iframe.onload = function () {
+      //   $("Iframe").resizeiframe();
+      // };
     </script>
   </body>
 </html>
