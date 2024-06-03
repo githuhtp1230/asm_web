@@ -1,5 +1,10 @@
 * {
   text-align: left;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
 }
 
 .lienhe__row {
@@ -15,7 +20,7 @@
   );
   color: white;
   width: 40%;
-  padding: 8px;
+  padding: 30px 8px 60px;
 }
 
 .lienhe-info p {
@@ -29,9 +34,29 @@
   border-bottom: 1px solid #fff;
 }
 
-.lienhe-info__address {
+.lienhe__postmessage {
+  padding: 30px;
+  flex: 1;
 }
 
-.lienhe__postmessage {
-  flex: 1;
+.form-item {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.form-item:not(:last-child) .lienhe__input {
+  padding: 10px 0px 10px 30px;
+}
+
+.lienhe__input {
+  width: 100%;
+}
+
+.icon {
+  position: absolute;
+  left: 7px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
