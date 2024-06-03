@@ -1,5 +1,5 @@
 * {
-  text-align: center;
+  text-align: left;
 }
 
 .lienhe__row {
@@ -7,18 +7,29 @@
 }
 
 .lienhe-info {
-  background-color: rgb(208, 208, 208);
-  background: url(../../img/lienhe/background.jpg);
+  background: rgb(7, 128, 224);
+  background: linear-gradient(
+    207deg,
+    rgba(7, 128, 224, 1) 51%,
+    rgba(2, 200, 219, 1) 96%
+  );
   color: white;
-  width: 30%;
+  width: 40%;
+  padding: 8px;
+}
+
+.lienhe-info p {
+  margin-top: 20px;
 }
 
 .lienhe-info__heading {
-  font-size: 30px;
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
 }
 
 .lienhe-info__address {
-  margin-top: 80px;
 }
 
 .lienhe__postmessage {
