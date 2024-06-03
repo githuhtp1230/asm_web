@@ -2,15 +2,25 @@
   text-align: center;
 }
 
-.info {
-  background-color: rgb(208, 208, 208);
-  padding: 50px;
+.lienhe__row {
+  display: flex;
 }
 
-.heading {
+.lienhe-info {
+  background-color: rgb(208, 208, 208);
+  background: url(../../img/lienhe/background.jpg);
+  color: white;
+  width: 30%;
+}
+
+.lienhe-info__heading {
   font-size: 30px;
 }
 
-.address {
+.lienhe-info__address {
   margin-top: 80px;
+}
+
+.lienhe__postmessage {
+  flex: 1;
 }
