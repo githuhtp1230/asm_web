@@ -4,6 +4,16 @@
 
 .introduce-inner {
   flex: 1;
+  padding: 20px;
+}
+
+.introduce-inner__heading {
+  font-size: 18px;
+  text-align: center;
+}
+
+.introduce-inner__desc {
+  margin-top: 15px;
 }
 
 .moreinfo {
