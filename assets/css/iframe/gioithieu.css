@@ -1,3 +1,7 @@
+:root {
+  --border--scocial: 2px solid #5b5b5b;
+}
+
 .introduce {
   display: flex;
 }
@@ -16,26 +20,34 @@
   margin-top: 15px;
 }
 
-.moreinfo {
-  width: 20%;
+.social__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px 0;
+  border-top: var(--border--scocial);
+  border-bottom: var(--border--scocial);
 }
 
-.moreinfo__img {
-  width: 100%;
+.social__icon {
+  font-size: 25px;
+  cursor: pointer;
 }
 
-.moreinfo__list {
-  background-color: rgb(177, 177, 177);
+.social__icon:not(:first-child) {
+  margin-left: 10px;
 }
 
-.moreinfo__focus--heading {
-  background-color: cyan;
+.social__icon:hover {
+  color: rgb(244, 55, 55);
 }
 
-.moreinfo__popular--heading {
-  background-color: orange;
+.email__container {
+  display: flex;
+  align-items: center;
 }
 
-.moreinfo__popular {
-  margin-top: 30px;
+.email__text {
+  margin-left: 7px;
 }

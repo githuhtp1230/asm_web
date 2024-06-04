@@ -1,0 +1,45 @@
+/* more info */
+.moreinfo {
+  width: 20%;
+}
+
+.moreinfo__img {
+  width: 100%;
+  height: 15%;
+  object-fit: cover;
+}
+
+.moreinfo__list {
+  background-color: rgb(177, 177, 177);
+}
+
+.moreinfo__heading {
+  line-height: 40px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.moreinfo__focus--heading {
+  background-color: cyan;
+}
+
+.moreinfo__popular--heading {
+  background-color: orange;
+}
+
+.moreinfo-item__desc {
+  font-size: 12px;
+}
+
+/* focus */
+.focus-item {
+  display: flex;
+  align-items: center;
+}
+
+/* popular */
+.moreinfo__popular {
+  margin-top: 30px;
+}
