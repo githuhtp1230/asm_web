@@ -9,7 +9,7 @@ body {
 
 .wrap-news {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   box-shadow: 1px 1px 5px 2px #ccc;
   width: 98%;
@@ -50,6 +50,7 @@ body {
 
 .news__content--desc {
   margin-top: 4px;
+  max-width: 100%;
 }
 
 .aside {
