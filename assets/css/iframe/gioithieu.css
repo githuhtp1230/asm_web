@@ -2,28 +2,8 @@
   display: flex;
 }
 
-.album {
+.introduce-inner {
   flex: 1;
-  padding: 30px;
-}
-
-.album-top__img {
-  width: 80%;
-}
-
-.album-top__img--inner {
-  width: 100%;
-}
-
-.album__list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 20px;
-}
-
-.album-item__img {
-  width: 100%;
 }
 
 .moreinfo {
