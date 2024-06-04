@@ -22,7 +22,7 @@ iframe {
   overflow: hidden;
 }
 .iframe__main {
-  /* height: 1000px; */
+  height: 1000px;
   width: 100%;
 }
 
