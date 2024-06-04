@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/iframe/lienhe.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
-    <title>Document</title>
-  </head>
-  <body id="contentDiv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/iframe/lienhe.css" />
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <title>Document</title>
+</head>
+
+<body id="contentDiv">
+  <div class="grid wide">
     <div class="lienhe__row">
       <div class="lienhe-info">
         <h1 class="lienhe-info__heading">THPT CHUYÊN HÀ NỘI - AMSTERDAM</h1>
@@ -37,49 +38,28 @@
         <form action="" class="lienhe-form">
           <div class="lienhe-form__name form-item">
             <i class="icon fa-solid fa-user">:</i>
-            <input
-              placeholder="Điền tên của bạn"
-              type="text"
-              name="name"
-              id=""
-              class="lienhe__input"
-            />
+            <input placeholder="Điền tên của bạn" type="text" name="name" id="" class="lienhe__input" />
           </div>
           <div class="lienhe-form__email form-item">
             <i class="icon fa-regular fa-envelope">:</i>
-            <input
-              placeholder="Email"
-              type="email"
-              name="email"
-              id=""
-              class="lienhe__input"
-            />
+            <input placeholder="Email" type="email" name="email" id="" class="lienhe__input" />
           </div>
           <div class="lienhe-form__message form-item">
-            <textarea
-              placeholder="Viết nội dung liên hệ"
-              name="message"
-              id=""
-              class="lienhe__input lienhe__message"
-              rows="6"
-            ></textarea>
+            <textarea placeholder="Viết nội dung liên hệ" name="message" id="" class="lienhe__input lienhe__message"
+              rows="6"></textarea>
           </div>
           <div class="lienhe__submit">
-            <button
-              type="submit"
-              class="lienhe__submit--btn lienhe__submit--send"
-            >
+            <button type="submit" class="lienhe__submit--btn lienhe__submit--send">
               Gửi
             </button>
-            <button
-              type="button"
-              class="lienhe__submit--btn lienhe__submit--cancel"
-            >
+            <button type="button" class="lienhe__submit--btn lienhe__submit--cancel">
               Hủy
             </button>
           </div>
         </form>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
