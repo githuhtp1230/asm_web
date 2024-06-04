@@ -36,9 +36,12 @@ iframe {
   position: relative;
 }
 
+.header__img-inner {
+  width: 100%;
+}
+
 .header__logo {
   z-index: 1;
-  min-width: 90px;
   position: absolute;
 }
 

@@ -1,0 +1,32 @@
+.introduce {
+  display: flex;
+}
+
+.introduce-inner {
+  flex: 1;
+  padding: 30px;
+}
+
+.moreinfo {
+  width: 20%;
+}
+
+.moreinfo__img {
+  width: 100%;
+}
+
+.moreinfo__list {
+  background-color: rgb(177, 177, 177);
+}
+
+.moreinfo__focus--heading {
+  background-color: cyan;
+}
+
+.moreinfo__popular--heading {
+  background-color: orange;
+}
+
+.moreinfo__popular {
+  margin-top: 30px;
+}
