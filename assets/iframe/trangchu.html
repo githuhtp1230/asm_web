@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/iframe/trangchu.css" />
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
   </head>
   <body id="contentDiv">
     <div class="news">
-      <article class="news__praise">
+      <article class="news__praise" data-aos="fade-up">
         <h2 class="news__heading">Tin tức</h2>
         <div class="news__row">
           <img src="../img/trangchu/graduate.png" alt="" class="news__img--praise">
@@ -24,7 +25,7 @@
           năm học 2023-2024 do Sở Giáo...[Xem thêm]
         </p>
       </article>
-      <aside class="news__aside">
+      <aside class="news__aside" data-aos="fade-up">
         <ul class="news__list">
           <li class="news-item">
             <a href="" class="news-item__link"
@@ -77,7 +78,7 @@
         </div>
       </aside>
     </div>
-    <article class="event">
+    <article class="event" data-aos="fade-up">
         <h2 class="event__heading">Sự kiện nổi bật</h2>
         <div class="event__list">
             <section class="event-item">
@@ -98,5 +99,9 @@
             </section>
         </div>
     </article>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

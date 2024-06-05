@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="../css/iframe/thuvien.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/aside.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Document</title>
 </head>
 
 <body>
     <div class="introduce">
         <div class="album">
-            <section class="album-top">
+            <section class="album-top" data-aos="fade-up">
                 <h3 class="album__heading">Những hình ảnh về trường Amsterdam</h3>
                 <p class="album-top__author">Post by: admin | 31 / 03 | 76543 reads</p>
                 <div
@@ -39,34 +40,34 @@
             <section class="album-bottom">
                 <h3 class="album__heading album__heading--bottom">ALBUM Khác</h3>
                 <div class="album__list">
-                    <section class="album-item">
+                    <section class="album-item" data-aos="fade-up"  data-aos-delay="0">
                         <img src="../img/thuvien/img1.png" alt="" class="album-item__img">
                         <p class="album-item__desc">Ngày hội công nghệ thông tin và $TEM</p>
                     </section>
-                    <section class="album-item">
+                    <section class="album-item" data-aos="fade-up"  data-aos-delay="100">
                         <img src="../img/thuvien/img2.png" alt="" class="album-item__img">
                         <p class="album-item__desc">Ngày hội công nghệ thông tin và $TEM</p>
                     </section>
-                    <section class="album-item">
+                    <section class="album-item" data-aos="fade-up"  data-aos-delay="200">
                         <img src="../img/thuvien/img3.png" alt="" class="album-item__img">
                         <p class="album-item__desc">Ngày hội công nghệ thông tin và $TEM</p>
                     </section>
-                    <section class="album-item">
+                    <section class="album-item" data-aos="fade-up"  data-aos-delay="300">
                         <img src="../img/thuvien/img4.png" alt="" class="album-item__img">
                         <p class="album-item__desc">Ngày hội công nghệ thông tin và $TEM</p>
                     </section>
-                    <section class="album-item">
+                    <section class="album-item" data-aos="fade-up"  data-aos-delay="400">
                         <img src="../img/thuvien/img5.png" alt="" class="album-item__img">
                         <p class="album-item__desc">Ngày hội công nghệ thông tin và $TEM</p>
                     </section>
-                    <section class="album-item">
+                    <section class="album-item" data-aos="fade-up"  data-aos-delay="500">
                         <img src="../img/thuvien/img6.png" alt="" class="album-item__img">
                         <p class="album-item__desc">Ngày hội công nghệ thông tin và $TEM</p>
                     </section>
                 </div>
             </section>
         </div>
-        <aside class="moreinfo">
+        <aside class="moreinfo" data-aos="fade-up">
             <img src="../img/logo.png" class="moreinfo__img"></img>
             <div class="moreinfo__focus moreinfo__child">
                 <h3 class="moreinfo__focus--heading moreinfo__heading">FOCUS</h3>
@@ -101,7 +102,7 @@
                     </section>
                 </div>
             </div>
-            <div class="moreinfo__popular moreinfo__child">
+            <div class="moreinfo__popular moreinfo__child" data-aos="fade-up">
                 <h3 class="moreinfo__popular--heading moreinfo__heading">MOST POPULAR</h3>
                 <div class="moreinfo__popular--list moreinfo__list">
                     <section class="popular-item moreinfo-item">
@@ -136,6 +137,10 @@
             </div>
         </aside>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>
