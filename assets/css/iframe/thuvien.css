@@ -7,12 +7,31 @@
   padding: 30px;
 }
 
+.album__heading {
+  font-size: 25px;
+}
+
+.album-top__author {
+  font-size: 13px;
+  color: #8b8b8b;
+  margin-top: 10px;
+}
+
+.fb-like {
+  margin-top: 10px;
+}
+
 .album-top__img {
-  width: 80%;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .album-top__img--inner {
   width: 100%;
+}
+
+.album__heading--bottom {
+  margin-top: 30px;
 }
 
 .album__list {
@@ -20,8 +39,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
+  margin-top: 10px;
 }
 
 .album-item__img {
   width: 100%;
+}
+
+.album-item__desc {
+  text-align: center;
+  color: #004cff;
 }

@@ -1,5 +1,5 @@
 :root {
-  --border--scocial: 2px solid #5b5b5b;
+  --border--social: 2px solid #5b5b5b;
 }
 
 .introduce {
@@ -9,6 +9,11 @@
 .introduce-inner {
   flex: 1;
   padding: 20px;
+}
+
+.introduce-inner__message {
+  padding: 20px;
+  border: 2px solid #ccc;
 }
 
 .introduce-inner__heading {
@@ -27,8 +32,8 @@
   align-items: center;
   margin-top: 20px;
   padding: 10px 0;
-  border-top: var(--border--scocial);
-  border-bottom: var(--border--scocial);
+  border-top: var(--border--social);
+  border-bottom: var(--border--social);
 }
 
 .social__icon {
