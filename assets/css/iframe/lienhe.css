@@ -14,11 +14,9 @@ textarea {
 }
 
 .lienhe-info {
-  background: linear-gradient(
-    207deg,
-    rgba(7, 128, 224, 1) 51%,
-    rgba(2, 200, 219, 1) 96%
-  );
+  background: linear-gradient(207deg,
+      rgba(7, 128, 224, 1) 51%,
+      rgba(2, 200, 219, 1) 96%);
   color: white;
   width: 30%;
   padding: 10px 8px 60px;
