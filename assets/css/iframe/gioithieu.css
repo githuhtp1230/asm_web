@@ -12,8 +12,9 @@
 }
 
 .introduce-inner__heading {
-  font-size: 18px;
+  font-size: 24px;
   text-align: center;
+  font-weight: bold;
 }
 
 .introduce-inner__desc {
