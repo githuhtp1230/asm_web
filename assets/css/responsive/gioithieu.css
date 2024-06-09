@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Tablet & mobile */
+@media (max-width: 991.98px) {
+  .moreinfo {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .introduce {
+    flex-direction: column;
+  }
+
+  .moreinfo__img {
+    display: none;
+  }
+
+  .moreinfo__list {
+    display: flex;
+  }
+
+  .moreinfo-item {
+    display: block;
+    flex: 1;
+  }
+
+  .moreinfo-item__img {
+    width: 100%;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+
+/* mobile */
+@media (max-width: 767.98px) {
+}
