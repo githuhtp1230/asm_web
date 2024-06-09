@@ -6,7 +6,8 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  max-width: 1200px;
+  width: 1200px;
+  max-width: calc(100% - 48px);
   margin: 0 auto;
 }
 
@@ -324,9 +325,6 @@ footer {
   display: flex;
   column-gap: 50px;
   font-size: 16px;
-}
-
-.footer__info {
 }
 
 @media (max-width: 768px) {
