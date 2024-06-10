@@ -23,6 +23,7 @@ a {
 .news__row {
   display: flex;
   margin-top: 10px;
+  column-gap: 10px;
 }
 
 .news__img--praise {
