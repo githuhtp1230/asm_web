@@ -1,6 +1,11 @@
 * {
   box-sizing: border-box;
 }
+
+section {
+  display: block;
+}
+
 a {
   text-decoration: none;
 }
