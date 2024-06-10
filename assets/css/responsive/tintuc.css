@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+@media (min-width: 740px) and (max-width: 1111px) {
+    .aside {
+        margin-top: 24px;
+        border-radius: 5px;
+        width: 100%;
+    }
+
+    .aside__title h1 {
+        font-size: 24px;
+    }
+
+    .aside__img {
+        display: none;
+    }
+}
+
+/* mobile */
+@media (max-width: 739px) {
+    .row {
+        padding: -8px;
+    }
+
+    .aside__img {
+        display: none;
+    }
+
+}
