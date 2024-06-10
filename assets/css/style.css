@@ -259,7 +259,7 @@ ol {
 
 .menu__main:hover .menu__sub {
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
   transition: all 0.3s ease;
 }
@@ -278,6 +278,7 @@ ol {
   position: absolute;
   visibility: hidden;
   width: 120px;
+  transform: translateX(70%);
 }
 
 .menu__sub--item::after {
