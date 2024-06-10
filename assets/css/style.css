@@ -6,8 +6,7 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  width: 1200px;
-  max-width: calc(100% - 48px);
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -261,7 +260,7 @@ ol {
 
 .menu__main:hover .menu__sub {
   visibility: visible;
-  transform: translateY(0);
+  transform: translateX(0);
   opacity: 1;
   transition: all 0.3s ease;
 }
@@ -280,6 +279,7 @@ ol {
   position: absolute;
   visibility: hidden;
   width: 120px;
+  transform: translateX(70%);
 }
 
 .menu__sub--item::after {

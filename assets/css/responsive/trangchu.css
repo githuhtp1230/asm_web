@@ -25,7 +25,16 @@
   .news {
     flex-direction: column;
   }
+  .news__row {
+    flex-direction: column;
+  }
+  .news__desc--small {
+    margin-top: 10px;
+  }
   .event__list {
     grid-template-columns: 1fr;
+  }
+  .header__slogan {
+    display: none;
   }
 }
