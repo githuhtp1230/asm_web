@@ -34,7 +34,4 @@
   .event__list {
     grid-template-columns: 1fr;
   }
-  .header__slogan {
-    display: none;
-  }
 }
